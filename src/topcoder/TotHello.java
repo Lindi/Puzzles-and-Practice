@@ -80,8 +80,8 @@ public class TotHello {
 				for ( int j = -1; j <= 1; j++ ) {
 					int row = piece.row + i ;
 					int column = piece.column + j ;
-					Piece neighbor = new Piece( row, column );
 					if ( row >= 0 && column >= 0 ) {
+						Piece neighbor = new Piece( row, column );
 						if ( board[row][column] == oppositeColor ) {
 							predecessor[row][column] = piece ;
 							queue.add(neighbor);
