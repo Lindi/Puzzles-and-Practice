@@ -25,8 +25,8 @@ public class BridgeCrossing {
 	 * 
 	 * We can use a more straightforward method of generating the combinations
 	 * since we know there will be at most 6 people.  We can do something like this
-	 * for ( int i = 0; i < n; i++ ) {
-	 * 	for( int j = 0; j < n; j++ ) {
+	 * for ( int i = 1; i < n; i++ ) {
+	 * 	for( int j = 0; j < i; j++ ) {
 	 * 		if ( j == 1 ) continue ;
 	 * 		...	mark pair
 	 * }
